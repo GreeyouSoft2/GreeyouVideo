@@ -3,13 +3,15 @@
   <head>
    <title>GreeyouVideo</title>
    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const searchKeyword = urlParams.get('GreeyouSoft');
+        var local = window.location;
+	       var url = local.origin;
+	        url + getDir(local); // 現在のディレクトリ
+	        function getDir(place, n) {
+	         const title = return place.pathname.replace(new RegExp("(?:\\\/+[^\\\/]*){0," + ((n || 0)) + "}$"), "/");
+          document.title = `${title} - GreeyouVideo `;
+         }
 
-        // 検索キーワードが存在する場合、ページのタイトルを設定します
-        if (searchKeyword) {
-            document.title = `${searchKeyword} - GreeyouVideo `;
-        }
+        // 検索キーワードが存在する場合、ページのタイトルを
    </script>
   </head>
   <body>
