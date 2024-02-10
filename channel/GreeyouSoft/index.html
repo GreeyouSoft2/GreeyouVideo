@@ -3,13 +3,14 @@
   <head>
    <title>GreeyouVideo</title>
    <script>
-        var local = window.location;
+               var local = window.location;
 	       var url = local.origin;
 	        url + getDir(local); // 現在のディレクトリ
 	        function getDir(place, n) {
 	         const title = return place.pathname.replace(new RegExp("(?:\\\/+[^\\\/]*){0," + ((n || 0)) + "}$"), "/");
-          document.title = `${title} - GreeyouVideo `;
-         }
+                 document.title = `${title} - GreeyouVideo `;
+                 document.getElementById("channel-name").innerHTML = "${title}"
+                }
 
         // 検索キーワードが存在する場合、ページのタイトルを
    </script>
