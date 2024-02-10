@@ -2,6 +2,15 @@
  <html>
   <head>
    <title>GreeyouVideo</title>
+   <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchKeyword = urlParams.get('GreeyouSoft');
+
+        // 検索キーワードが存在する場合、ページのタイトルを設定します
+        if (searchKeyword) {
+            document.title = `${searchKeyword} - GreeyouVideo `;
+        }
+   </script>
   </head>
   <body>
    <header>
