@@ -1,32 +1,4 @@
 <!DOCTYPE html>
- <html>
-   <head>
-    <title>Upload Video</title> 
-    <script>
-     async function uploadFile() {
-      //creating form data object and append file into that form data
-  let formData = new FormData(); 
-  formData.append("file", fileupload.files[0]);
-      //network request using POST method of fetch
-  await fetch('https://script.google.com/macros/s/AKfycbyQLHplhWmaiWjI48GJlAOwIm-7fTBJzlTU3TQPkSHIGV_cIKINOwgXDePcnlJZXZ04/exec', {
-    method: "POST", 
-    body: formData
-  }); 
-  alert('You have successfully upload the file!');
-  }
-    </script>
-   </head>
-   <body>
-     <header>
-       <img src="https://www.greeyousoft.f5.si/GreeyouVideo/logo.png">
-       <nav>
-         <a href="#">Upload Video</a>
-       </nav>
-       <form method="post">
-        <input type="file" accept=".mp3,.mp4.mpeg,mpv,.ogg,video/mp3,video/mp4,video/mpeg,video/mpv,video/ogg," required>
-        <input type="name" method="post" id="name" required>
-        <input type="submit" onclick="uploadFile" value="送信">
-       </form>
-     </header>
-   </body>
- </html>
+ <head>
+  <meta https://script.google.com/macros/s/AKfycbyQLHplhWmaiWjI48GJlAOwIm-7fTBJzlTU3TQPkSHIGV_cIKINOwgXDePcnlJZXZ04/exec>
+ </head>
