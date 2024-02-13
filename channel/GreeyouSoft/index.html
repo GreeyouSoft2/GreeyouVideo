@@ -3,15 +3,7 @@
   <head>
    <title>GreeyouVideo</title>
    <script>
-               var local = window.location;
-	       var url = local.origin;
-	        url + getDir(local); // 現在のディレクトリ
-	        function getDir(place, n) {
-	         const title = return place.pathname.replace(new RegExp("(?:\\\/+[^\\\/]*){0," + ((n || 0)) + "}$"), "/");
-                 document.title = `${title} - GreeyouVideo `;
-                 document.getElementById("channel-name").innerHTML = "${title}"
-                }
-
+        
         // 検索キーワードが存在する場合、ページのタイトルを
    </script>
   </head>
@@ -23,7 +15,7 @@
     </div>
     <div id="clannel-nav">
      <!-- GreeyouSoft Official Channel -->
-     <hi id="clannel-name">name</hi>
+     <hi id="clannel-name">GreeyouSoft</hi>
     </div>
    </header>
   </body>
